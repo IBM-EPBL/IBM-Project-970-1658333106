@@ -1,3 +1,0 @@
-flask
-gunicorn
-ibm_db
