@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://assignment3test.s3.jp-tok.cloud-object-storage.appdomain.cloud/style.css">
+    <title>IBM Object Storage</title>
+</head>
+<body>
+
+    <h2 class="header"> Images / CSS loaded from object storage </h2>
+
+    <div class="images">
+        <div class="img1">
+            <img class="image1" src="https://arun2402.s3.jp-tok.cloud-object-storage.appdomain.cloud/download%20(1).jpg" alt="image 1">
+            <img class="image2" src="https://arun2402.s3.jp-tok.cloud-object-storage.appdomain.cloud/download%20(2).jpg" alt="image 2">
+        </div>
+        <div class="img2">
+            <img class="image3" src="https://arun2402.s3.jp-tok.cloud-object-storage.appdomain.cloud/download%20(3).jpg" alt="image 3">
+            <img class="image4" src="https://arun2402.s3.jp-tok.cloud-object-storage.appdomain.cloud/download%20(4).jpg" alt="image 4">
+        </div>
+        <img class="finalimg" src="https://arun2402.s3.jp-tok.cloud-object-storage.appdomain.cloud/download.jpg" alt="image 5">
+    </div>
+
+    <script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "76e5d4e2-4f06-4fc7-823d-2e6e8791597d", // The ID of this integration.
+    region: "au-syd", // The region your integration is hosted in.
+    serviceInstanceID: "e8ca932d-5d92-4ee5-b605-fcea6d97e24c", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+       
+      
+</body>
+</html>
