@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1 style="text-align: center;">WELCOME!</h1>
+    <h1>  {% block title %} <span style="color: rgb(29, 11, 166);">WRITE YOUR MESSAGES</span> {% endblock %}</h1>
+    {% for message in messages %}
+        <div class='message'>
+            <h3 style="color: white;"><span style="color: rgb(0, 0, 0);">TITLE : </span> {{ message['title'] }}</h3>
+            <h3 ><span style="color: rgb(0, 0, 0);">MESSAGE : </span></h3><p style="color: white;">{{ message['content'] }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
